@@ -854,13 +854,14 @@ input[type="file"] {
 /*********************************************************** 
 ########### PÁGINA -- PRINCIPAL -- DANDELION.PHP ###########
 ***********************************************************/
+.body{
+    width: 100%;
+    height: 100vh;
+}
+
 .dandelion-full-space{
     width: 100%;
-    height: 150vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    height: 100%;
     position: relative;
     background: url('../imgs/background-image.png');
     background-repeat: no-repeat;
@@ -872,9 +873,9 @@ input[type="file"] {
     height: 100%;
     display: grid;
     grid-template:
-    "logo sidenav nav nav" 125px
-    "logo sidenav content advert" 90%
-    "footer footer footer footer" 100% / 100px 250px 2fr 320px;
+    "logo sidenav nav nav" 15%
+    "logo sidenav content advert" 70.66%
+    "footer footer footer footer" 15% / 100px 250px 2fr 320px;
 }
 
 /* logo */
@@ -1225,14 +1226,14 @@ input[type="file"] {
 }
 
 .config-status{
-    width: 420px;
-    height: 100%;
+    width: 410px;
+    height: 75px;
     display: flex;
     align-items: center;
 }
 
 .configs{
-    padding: 0 20px 0 0;
+    width: 10%;
     color: #212529;
     margin-right: 15px !important;
 }
@@ -1247,14 +1248,15 @@ input[type="file"] {
 }
 
 .status-user{
-    width: 370px;
+    width: 100%;
     height: 100%;
     background-color: white;
     border-radius: 5px;
+    display: flex;
 }
 
 .dandelion-coins{
-    width: 100%;
+    width: 77%;
     height: 100%;
     padding: 20px;
     display: flex;
@@ -1305,7 +1307,7 @@ input[type="file"] {
 }
 
 .photo-user{
-    width: 30%;
+    width: 23%;
     height: 100%;
     background-color: #49CC68;
     border-radius: 5px;
@@ -1336,33 +1338,24 @@ input[type="file"] {
     border-radius: 50%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* content */
 .content-dandelion {
+    margin: 0 20px 20px 20px;
 	grid-area: content;
+    background: #FFFFFF;
+    opacity: 0.5;
+    border-radius: 5px;
+    overflow: auto;
 }
 
 /* advert */
 .advert-dandelion {
 	grid-area: advert;
+    margin: 0 20px 20px 0;
+    background: #FFFFFF;
+    opacity: 0.5;
+    border-radius: 5px;
+    overflow: auto;
 }
 
 /* footer */

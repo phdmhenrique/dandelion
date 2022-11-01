@@ -202,19 +202,21 @@
                                 <span class="amout-coins__green">68</span>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="photo-user">
-                        <div class="photo-user__user">
-                            <img src="../assets/imgs/girl_photo01.png" alt="girl photo" />
-                            <div class="people-status__user"></div>
+                        <div class="photo-user">
+                            <div class="photo-user__user">
+                                <img src="../assets/imgs/girl_photo-logo.png" alt="girl photo" />
+                                <div class="people-status__user"></div>
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </navbar>
             
-            
-            <section class="content-dandelion">content</section>
+            <section class="content-dandelion">
+                
+            </section>
             <aside class="advert-dandelion">advert</aside>
 
             <footer class="informations footer-dandelion">
