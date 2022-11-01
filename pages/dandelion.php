@@ -214,7 +214,7 @@
                 </div>
             </navbar>
             
-            <section class="all-content">
+            <section class="all-content">''
                 <div class="container__all-content">
                     <section class="content-dandelion">
 
