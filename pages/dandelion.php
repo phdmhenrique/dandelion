@@ -214,10 +214,15 @@
                 </div>
             </navbar>
             
-            <section class="content-dandelion">
-                
+            <section class="all-content">
+                <div class="container__all-content">
+                    <section class="content-dandelion">
+
+                    </section>
+
+                    <aside class="advert-dandelion"></aside>
+                </div>
             </section>
-            <aside class="advert-dandelion">advert</aside>
 
             <footer class="informations footer-dandelion">
                 <div class="informations-container">
