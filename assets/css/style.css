@@ -1379,6 +1379,10 @@ input[type="file"] {
 
 /* advert */
 .advert-dandelion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 /* footer */
