@@ -89,16 +89,16 @@
                 <div class="informations-dandelion">
                     <h4>@Dandelion</h4>
                     <div class="informations__social-midia">
-                        <a href="#">
-                            <i class="fa-brands fa-square-twitter"></i>
+                        <a href="https://twitter.com">
+                            <img src="../assets/imgs/twitter.png" alt="twitter icon" />
                         </a>
 
-                        <a href="#">
-                            <i class="fa-brands fa-square-facebook"></i>    
+                        <a href="https://facebook.com">
+                            <img src="../assets/imgs/facebook.png" alt="facebook icon" />
                         </a>
 
-                        <a href="#">
-                            <i class="fa-brands fa-square-instagram"></i>
+                        <a href="https://instagram.com">
+                            <img src="../assets/imgs/instagram.png" alt="instagram icon" />
                         </a>
                     </div>
                 </div>

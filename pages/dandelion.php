@@ -179,7 +179,7 @@
 
             <navbar class="nav-dandelion">
                 <div class="welcome">
-                    <i class="fa-solid fa-hands-clapping"></i>
+                    <img src="../assets/imgs/hand-welcome.png" alt="">
                     <div class="welcome-user">
                         <h4>Olá <span class="user-name">Mariana</span>, Bem Vinda de volta!</h4>
                         <p>Continue a colaborar com as suas comunidades</p>
@@ -214,13 +214,47 @@
                 </div>
             </navbar>
             
-            <section class="all-content">''
+            <section class="all-content">
                 <div class="container__all-content">
                     <section class="content-dandelion">
+                        <nav class="informations-comunity">
+                            <div class="about-comunity">
+                                <img src="../assets/imgs/comunidade01.png" class="informations-comunity_img" alt="comunidade foto">
+                                <div class="name-comunity">
+                                    <div class="name-comunity__info">
+                                        <h4>CMD São Marcos</h4>
+                                        <i class="fa-solid fa-circle-info"></i>
+                                    </div>
+                                    <p>Por conseguinte, a complexidade dos estudos efetuados cumpre um papel essencial na formulação da gestão inovadora da qual fazemos parte.</p>
+                                </div>
+                            </div>
 
+                            <div class="users-online">
+                                <div class="users-photos_only">
+                                    <img src="../assets/imgs/girl_photo-logo.png" alt="foto de usuário" class="photo01">
+                                    <img src="../assets/imgs/man_photo03.png" alt="foto de usuário"  class="photo02">
+                                    <img src="../assets/imgs/man_photo04.png" alt="foto de usuário" class="photo03">
+                                </div>
+
+                                <div class="number-online__users">
+                                    <span>68</span>
+                                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <rect width="25" height="25" fill="url(#pattern0)"/>
+                                        <defs>
+                                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                        <use xlink:href="#image0_18_751" transform="scale(0.0104167)"/>
+                                        </pattern>
+                                        <image id="image0_18_751" width="96" height="96" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABmJLR0QA/wD/AP+gvaeTAAAFWUlEQVR4nO2bT0wcZRjGn/ebbUFL9KKm2BiibQgpB1N2oVo18aAsS2J7aaIeOFkXqjHqUU0rRu+aNFkWQuufpkYDGqtldyVN2iYeNGyJWiOYxhatVrEam7YE0J15PVANwu7ODvPNfhN4f0f22+f7Lc/OzH7zBxAEQRAEQRAEQRAEQRAEQRAEYbVDQYYn8snNBNrFoA6AGwC1aeEV/gngH5gpZ4GOjrT2nQvSI8x+gRTQOf50A9uFF0G0B4ByGc4EDCuLXzq2rf9sED5h9tNeQMdY9+NEdBDADR7fOs+Enlw0/ZZup8WEzc+tfU90jvX0EtG78P7hAKCGGG8m8t37dTotJox+2raAzrGeLia8oyWM8US2NX1IS9Z1wuqnpYD46ae2KHa+AVCjIw/AnG0Xto5uHzyvIyzMflp2Qcrh16DvwwFArWVFXtUVFmY/31tAIp/cDKizOrKW4Nh2YYvfb1nY/XxvAQTahWB+zqqIZe30GxJ2P98FMBD3m1EKh1WH34yw+2k4BtBd/jNKJJOjITvcfjoOwhs1ZJSAbtcQEmo/rQuxAHBMC7jg209HAb9oyCgKARc1xITaT0MBrGWxVAyHacp/Srj9/P8KYsr5zSgJcdZvRNj9fBdggY4imH2149iFT/yGhN3PdwEjrX3nCHjfb85SmHBEx7mWsPtp+RXEcPYBmNORdZ1Zp1B4WVdYmP20FJCNDXxPjKSOLAAA4UldZ0KBcPtpWwdkWtOHmdCrIWp/Npo+oiHnf4TVL4BLkj2PEeEQVnLJD9Sdi/W9rdtpMWHz074SzrWm34vAaQLzAAC7grcwAUOA0xz0Pz+MfoHeltL+xZ47I5a1k0EJAhoYdMfCpHzBYZpS5OQKtv2xzv39avITBEEQBEEQBGF1om0hlhh/5lYUClthcSOYGkHcCMYmADdiYdl/M4A6AOsAvgwQA7gK4CID0wr4mcGTrPAtYf3X2ZYDl3S5efRjADMA/gRwDYwZEE8D+I6hJph5QtnrJrP3HLiiw2vFBbR/1bWB/q570AK3A2hnoEmH0L8QMAnCKdiqN9OW+jVsfgAmAGRAyNTV/vHZUPPQXysJ8VxAPJ9sUbCeBfhR6L3fchnE9GEm1rcbBK70PdX0W8RVMGUUUf9INHXSi2/FBSTG9iaI+AUGHliZozcIdH69VdPy0bY3Llcyvtp+peEviWhfJpo+Vslo1wLi+WS9YqsfxI/4l6scIk5kov2uF9RN+blCyNq26h5tS10oP6wMHfnk/QT1AYDbtMq583k2lr7XbZBBv0r5HQ7tzrb1nSo1oOT1gM6x7ocJahQGPhwRv+I2xqSfB26B4lx8bO9DpQYULaA9n2xiomGs7Fkqv1xqa6kfLTfAsJ9XahXx8MJzCsuJLPsLg6zTahDATUGbFYOYP+2l3tL38VTf7wyBD9pO5DjXXJkavfvwjM7wZQV0jnfHGbhP5yReYFX+TrYq+s0DeH57dGN/2S+ET5YVwExdQU1WCY6Dsg9DV8lvXkElRmKpE77vPXSh2DFgR8BzlsWyrGmXIYH7Efi5kVjqRNDzAMULCPCBBnc2zK3/zWVI0H5n2qL1AwHP8R/FCqit1uTFGNrx+qzLkED9GBgMcp+/lLA/IVN1SPHxas4nBSxhtsb6sZrzLV8HrHFONqeulXs9ke8pe6YzG0t7OsMsW4BhpADDSAGGkQIMIwUYRgowjBRgmEAf0FiNyDpglSEFGEYKMMyaPwa47dODRrYAw0gBhpECDCMFGEYKMIwUYBgpwDBrfh3gFTkXtMqQAgwjBRhGCjCMFGAYKcAwUoBhpADDSAGGkQIMIwUY5h8GjCpsabd4qAAAAABJRU5ErkJggg=="/>
+                                        </defs>
+                                    </svg>
+                                </div>
+                            </div>
+                        </nav>  
                     </section>
 
-                    <aside class="advert-dandelion"></aside>
+                    <aside class="advert-dandelion">
+
+                    </aside>
                 </div>
             </section>
 
@@ -229,16 +263,16 @@
                     <div class="informations-dandelion">
                         <h4>@Dandelion</h4>
                         <div class="informations__social-midia">
-                            <a href="#">
-                                <i class="fa-brands fa-square-twitter"></i>
+                            <a href="https://twitter.com">
+                                <img src="../assets/imgs/twitter.png" alt="twitter icon" />
                             </a>
 
-                            <a href="#">
-                                <i class="fa-brands fa-square-facebook"></i>    
+                            <a href="https://facebook.com">
+                                <img src="../assets/imgs/facebook.png" alt="facebook icon" />
                             </a>
 
-                            <a href="#">
-                                <i class="fa-brands fa-square-instagram"></i>
+                            <a href="https://instagram.com">
+                                <img src="../assets/imgs/instagram.png" alt="instagram icon" />
                             </a>
                         </div>
                     </div>

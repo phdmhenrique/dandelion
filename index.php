@@ -62,15 +62,15 @@
                         <a href="pages/dandelion.php" type="submit" class="buttonSubmit">Entrar</a>
                         <span class="login-divisory"></span>
                         <div class="social-midia">
-                            <a href="#">
-                                <i class="fa-brands fa-square-google-plus"></i>
+                            <a href="https://google.com">
+                                <img src="assets/imgs/google.png" alt="google icon" />
                             </a>
-                            <a href="#">
-                                <i class="fa-brands fa-square-twitter"></i>
+                            <a href="https://twitter.com/">
+                                <img src="assets/imgs/twitter.png" alt="twitter icon" />
                             </a>
 
-                            <a href="#">
-                                <i class="fa-brands fa-square-facebook"></i>    
+                            <a href="https://facebook.com">
+                                <img src="assets/imgs/facebook.png" alt="facebook icon" />
                             </a>
                         </div>  
                     </div>
