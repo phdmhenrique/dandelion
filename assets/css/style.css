@@ -1605,7 +1605,6 @@ input[type="file"] {
 .main-services{
     width: 100%;
     height: 80%;
-    padding: 20px;
 }
 
 .main-services__container{
@@ -1613,6 +1612,9 @@ input[type="file"] {
     height: 100%;
     display: grid;  
     grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    overflow-y: auto;
 }
 
 .card-service{
