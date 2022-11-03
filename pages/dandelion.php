@@ -250,6 +250,115 @@
                                 </div>
                             </div>
                         </nav>  
+
+                        <div class="contributions">
+                            <div class="contributions-container">
+                                <img src="../assets/imgs/hand-voluntaring_icon.png" alt="ícone de voluntário">
+                                <span class="contributions-span">Contribuições</span>
+                                <span class="contributions-divisory"></span>
+                                <span class="contributions-category">#Livros</span>
+                                <span class="contributions-divisory"></span>
+
+                            </div>
+
+                            <div class="services-search">
+                                <ul class="contributions-services__nav">
+                                    <li>
+                                        <a href="" class="contributions-services__nav-link link-active">Oferecidas</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="" class="contributions-services__nav-link">Solicitadas</a>
+                                    </li>
+                                </ul>
+
+                                <div class="search-services-container">
+                                    <img src="../assets/imgs/search-icon.png" alt="">                                   
+                                    <input type="search" class="search-services" placeholder="Procurar em serviços" />
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <main class="main-services">
+                            <div class="main-services__container">
+                                <div class="card-service">
+                                    <div class="card-info">
+                                        <div class="photo-info">
+                                            <div class="photo-info__user">
+                                                <img src="../assets/imgs/girl_photo01.png" alt="girl photo" />
+                                                <div class="people-status online"></div>
+                                            </div>
+
+                                            <div class="name-user__time-online">
+                                                <span>Mariana Lemos</span>
+                                                <p>2h</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-options">
+                                            <i class="fa-solid fa-ellipsis"></i>
+                                            <i class="fa-regular fa-bookmark"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-title-service">
+                                        <p>Livros de Química em Bom Estado - Seminovos</p>
+                                    </div>
+
+                                    <div class="service-img">
+                                        <img src="../assets/imgs/livros-img.png" alt="imagem do serviço">
+                                    </div>
+
+                                    <div class="service-details">
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Detalhes</button>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <span class="service-details__divisory"></span>
+
+                                        <div class="service-details__hours">
+                                            <i class="fa-solid fa-clock"></i>
+                                            <span>Horários</span>
+                                        </div>
+
+                                        <span class="service-details__divisory"></span>
+
+                                        <div class="helping-points">
+                                            <i class="fa-solid fa-handshake-angle"></i>
+                                            <span>20</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="solicite-service">
+                                        <div class="comunity-solicites">
+                                            <i class="fa-solid fa-users-rectangle"></i>
+                                            <span>03</span>
+                                        </div>
+
+                                        <span class="solicite-services__divisory"></span>
+
+                                        <div class="comunity-coins__price">
+                                            <img src="../assets/imgs/dandelion_coin_green.png" alt="">
+                                            <span>20</span>
+                                        </div>
+                                        
+                                        <span class="solicite-services__divisory"></span>
+
+                                        <button type="button" class="button-solicite__service">Solicitar</button>
+
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </main>
                     </section>
 
                     <aside class="advert-dandelion">
