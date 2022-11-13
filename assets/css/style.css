@@ -2336,6 +2336,7 @@ input[type="file"] {
 }
 
 .form-create-account__contribuir{
+    display: none;
     width: 700px;
     height: auto;
     background: white;
@@ -2348,8 +2349,8 @@ input[type="file"] {
     transform: translate(-50%, -50%);
 }
 
-.active-form__contribuir{
-    display: block;
+.active-form{
+    display: block !important;
 }
 
 .next-page__contribuir{
@@ -2384,4 +2385,83 @@ input[type="file"] {
     font-size: 25px;
     color: #49CC68;
     margin-right: 10px;
+}
+
+.form-delete-contribution {
+    display: none;
+    width: 400px;
+    height: 235px;
+    background: white;
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.delete-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 8px 8px 0 0;
+}
+
+.top-container{
+    width: 100%;
+    height: 20%;
+    background: #49CC68;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-container h5 {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 12px;
+    color: #FFF;
+    margin-bottom: 0;
+}
+
+.sure-remove {
+    width: 100%;
+    height: 80%;
+    padding: 30px;
+}
+
+.sure-remove p {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 1;
+    color: #232323;
+    text-align: center;
+}
+
+.button-removes {
+    width: 100%;
+    height: 40px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sure-buttons {
+    width: 150px;
+    height: 40px;
+    background-color: #49CC68;
+    border-radius: 5px;
+
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1;
+    color: #FFF;
 }

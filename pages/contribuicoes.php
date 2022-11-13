@@ -17,8 +17,8 @@
 <body class="body">
     <main class="dandelion-full-space">
     <div class="background__form" id="background-form">
-        <form class="form-create-account__contribuir">
-            <div class="close" id="close-button">
+        <form class="form-create-account__contribuir" id="insert-contribution-form">
+            <div class="close" id="close-button__insert">
                 <i class="fa-solid fa-square-xmark"></i>
             </div>
             <div class="title">
@@ -56,15 +56,6 @@
             <div class="mb-3">
                 <label class="form-label">Descrição</label>
                 <textarea class="form-control field-textarea" required></textarea>
-            </div>
-
-            <div class="service">
-                <label class="form-label">Este serviço aceita trocas?</label>
-                <i class="fa-solid fa-circle-info"></i>
-                <div class="options-buttons">
-                    <button type="button" class="button-choice button-acc">Sim</button>
-                    <button type="button" class="button-choice">Não</button>
-                </div>
             </div>
 
             <span class="date-progress__divisory"></span>
@@ -110,7 +101,110 @@
             </div>
 
         </form>
+
+        <form class="form-create-account__contribuir" id="alter-contribution-form">
+            <div class="close" id="close-button__alter">
+                <i class="fa-solid fa-square-xmark"></i>
+            </div>
+            <div class="title">
+                <div class="date-progress">
+                    <h1>Alterar contribuição</h1>
+                    <span>CMD São Marcos</span>
+                </div>
+                <span class="date-progress__divisory"></span>
+            </div>
+
+            <div class="col-12 mb-4">
+                <label class="form-label">Atividade</label>
+                <input type="text" class="form-control" required>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-6 photo">
+                    <span>Foto(s)</span>
+                    <div class="photo-file">
+                        <label class="form-label">(Escolha o arquivo)</label>
+                        <input class="form-control" type="file" id="formFileMultiple" multiple required>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <label class="form-label">Categoria</label>
+                    <select id="inputState" class="form-select" required>
+                        <option selected>...</option>
+                        <option>Mecânica</option>
+                        <option>Encanador</option>
+                        <option>Instrutor</option>
+                    </select>
+                </div>    
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Descrição</label>
+                <textarea class="form-control field-textarea" required></textarea>
+            </div>
+
+            <span class="date-progress__divisory"></span>
+
+            <div class="available-times">
+                <h1>Horários disponíveis</h1>
+                <div class="options-service">
+                    <div class="col-7">
+                        <label class="form-label">Dia da semana</label>
+                        <select id="inputState" class="form-select" required>
+                            <option selected class="option-neuter">Selecione o dia</option>
+                            <option>Segunda-feira</option>
+                            <option>Terça-feira</option>
+                            <option>Quarta-feira</option>
+                            <option>Quinta-feira</option>
+                            <option>Sexta-feira</option>
+                            <option>Sábado</option>
+                            <option>Domingo</option>
+                        </select>
+                    </div>
+
+                    <div class="col-2">
+                        <label class="form-label">Das</label>
+                        <input type="time" class="service-hours"  />
+                    </div>
+
+                    <div class="col-2">
+                        <label class="form-label">Até</label>
+                        <input type="time" class="service-hours" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="next-page__contribuir">
+                <div class="next-page__container__contribuir">
+                    <span>
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                    Importante! <br> Preencha todos os dados.
+                    </span>
+
+                    <button type="submit" href="../index.php" class="next-page__button">Finalizar</a>
+                </div>
+            </div>
+        </form>
+
+        <form action="" class="form-delete-contribution" id="delete-contribution-form">
+            <div class="delete-container">
+                <div class="top-container">
+                    <h5>Remover contribuição</h5>
+                </div>
+
+                <div class="sure-remove">
+                    <div class="about-remove">
+                        <p>Você tem certeza que deseja remover essa contribuição?</p>
+                    </div>
+                    <div class="button-removes">
+                        <button type="submit" class="sure-buttons">Sim</button>
+                        <button class="sure-buttons" id="no-delete">Não</button>
+                    </div>
+                </div>
+            </div>
+        </form>
     </div>
+
         <section class="dandelion-template">
             <article class="logo-dandelion">
                 <div class="dandelion-logo__icon">
@@ -372,15 +466,6 @@
 
                                 <div class="number-online__users">
                                     <span>68</span>
-                                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                        <rect width="25" height="25" fill="url(#pattern0)"/>
-                                        <defs>
-                                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                        <use xlink:href="#image0_18_751" transform="scale(0.0104167)"/>
-                                        </pattern>
-                                        <image id="image0_18_751" width="96" height="96" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABmJLR0QA/wD/AP+gvaeTAAAFWUlEQVR4nO2bT0wcZRjGn/ebbUFL9KKm2BiibQgpB1N2oVo18aAsS2J7aaIeOFkXqjHqUU0rRu+aNFkWQuufpkYDGqtldyVN2iYeNGyJWiOYxhatVrEam7YE0J15PVANwu7ODvPNfhN4f0f22+f7Lc/OzH7zBxAEQRAEQRAEQRAEQRAEQRAEYbVDQYYn8snNBNrFoA6AGwC1aeEV/gngH5gpZ4GOjrT2nQvSI8x+gRTQOf50A9uFF0G0B4ByGc4EDCuLXzq2rf9sED5h9tNeQMdY9+NEdBDADR7fOs+Enlw0/ZZup8WEzc+tfU90jvX0EtG78P7hAKCGGG8m8t37dTotJox+2raAzrGeLia8oyWM8US2NX1IS9Z1wuqnpYD46ae2KHa+AVCjIw/AnG0Xto5uHzyvIyzMflp2Qcrh16DvwwFArWVFXtUVFmY/31tAIp/cDKizOrKW4Nh2YYvfb1nY/XxvAQTahWB+zqqIZe30GxJ2P98FMBD3m1EKh1WH34yw+2k4BtBd/jNKJJOjITvcfjoOwhs1ZJSAbtcQEmo/rQuxAHBMC7jg209HAb9oyCgKARc1xITaT0MBrGWxVAyHacp/Srj9/P8KYsr5zSgJcdZvRNj9fBdggY4imH2149iFT/yGhN3PdwEjrX3nCHjfb85SmHBEx7mWsPtp+RXEcPYBmNORdZ1Zp1B4WVdYmP20FJCNDXxPjKSOLAAA4UldZ0KBcPtpWwdkWtOHmdCrIWp/Npo+oiHnf4TVL4BLkj2PEeEQVnLJD9Sdi/W9rdtpMWHz074SzrWm34vAaQLzAAC7grcwAUOA0xz0Pz+MfoHeltL+xZ47I5a1k0EJAhoYdMfCpHzBYZpS5OQKtv2xzv39avITBEEQBEEQBGF1om0hlhh/5lYUClthcSOYGkHcCMYmADdiYdl/M4A6AOsAvgwQA7gK4CID0wr4mcGTrPAtYf3X2ZYDl3S5efRjADMA/gRwDYwZEE8D+I6hJph5QtnrJrP3HLiiw2vFBbR/1bWB/q570AK3A2hnoEmH0L8QMAnCKdiqN9OW+jVsfgAmAGRAyNTV/vHZUPPQXysJ8VxAPJ9sUbCeBfhR6L3fchnE9GEm1rcbBK70PdX0W8RVMGUUUf9INHXSi2/FBSTG9iaI+AUGHliZozcIdH69VdPy0bY3Llcyvtp+peEviWhfJpo+Vslo1wLi+WS9YqsfxI/4l6scIk5kov2uF9RN+blCyNq26h5tS10oP6wMHfnk/QT1AYDbtMq583k2lr7XbZBBv0r5HQ7tzrb1nSo1oOT1gM6x7ocJahQGPhwRv+I2xqSfB26B4lx8bO9DpQYULaA9n2xiomGs7Fkqv1xqa6kfLTfAsJ9XahXx8MJzCsuJLPsLg6zTahDATUGbFYOYP+2l3tL38VTf7wyBD9pO5DjXXJkavfvwjM7wZQV0jnfHGbhP5yReYFX+TrYq+s0DeH57dGN/2S+ET5YVwExdQU1WCY6Dsg9DV8lvXkElRmKpE77vPXSh2DFgR8BzlsWyrGmXIYH7Efi5kVjqRNDzAMULCPCBBnc2zK3/zWVI0H5n2qL1AwHP8R/FCqit1uTFGNrx+qzLkED9GBgMcp+/lLA/IVN1SPHxas4nBSxhtsb6sZrzLV8HrHFONqeulXs9ke8pe6YzG0t7OsMsW4BhpADDSAGGkQIMIwUYRgowjBRgmEAf0FiNyDpglSEFGEYKMMyaPwa47dODRrYAw0gBhpECDCMFGEYKMIwUYBgpwDBrfh3gFTkXtMqQAgwjBRhGCjCMFGAYKcAwUoBhpADDSAGGkQIMIwUY5h8GjCpsabd4qAAAAABJRU5ErkJggg=="/>
-                                        </defs>
-                                    </svg>
                                 </div>
                             </div>
                         </nav>  
@@ -430,9 +515,8 @@
                                             <div class="dropdown">
                                                 <i class="fa-solid fa-ellipsis" data-bs-toggle="dropdown" aria-expanded="false"></i>
                                                 <ul class="dropdown-menu">
-                                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                    <li class="dropdown-item" id="alter-button">Alterar</li>
+                                                    <li class="dropdown-item" id="delete-button">Excluir</li>
                                                 </ul>
                                             </div>
                                             <i class="fa-regular fa-bookmark"></i>
@@ -506,9 +590,8 @@
                                             <div class="dropdown">
                                                 <i class="fa-solid fa-ellipsis" data-bs-toggle="dropdown" aria-expanded="false"></i>
                                                 <ul class="dropdown-menu">
-                                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                    <li class="dropdown-item" id="alter-button">Alterar</li>
+                                                    <li class="dropdown-item" id="delete-button">Excluir</li>
                                                 </ul>
                                             </div>
                                             <i class="fa-regular fa-bookmark"></i>
@@ -582,9 +665,8 @@
                                             <div class="dropdown">
                                                 <i class="fa-solid fa-ellipsis" data-bs-toggle="dropdown" aria-expanded="false"></i>
                                                 <ul class="dropdown-menu">
-                                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                    <li class="dropdown-item" id="alter-button">Alterar</li>
+                                                    <li class="dropdown-item" id="delete-button">Excluir</li>
                                                 </ul>
                                             </div>
                                             <i class="fa-regular fa-bookmark"></i>
@@ -658,9 +740,8 @@
                                             <div class="dropdown">
                                                 <i class="fa-solid fa-ellipsis" data-bs-toggle="dropdown" aria-expanded="false"></i>
                                                 <ul class="dropdown-menu">
-                                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                    <li class="dropdown-item" id="alter-button">Alterar</li>
+                                                    <li class="dropdown-item" id="delete-button">Excluir</li>
                                                 </ul>
                                             </div>
                                             <i class="fa-regular fa-bookmark"></i>
@@ -734,9 +815,8 @@
                                             <div class="dropdown">
                                                 <i class="fa-solid fa-ellipsis" data-bs-toggle="dropdown" aria-expanded="false"></i>
                                                 <ul class="dropdown-menu">
-                                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                    <li class="dropdown-item" id="alter-button">Alterar</li>
+                                                    <li class="dropdown-item" id="delete-button">Excluir</li>
                                                 </ul>
                                             </div>
                                             <i class="fa-regular fa-bookmark"></i>
@@ -810,9 +890,8 @@
                                             <div class="dropdown">
                                                 <i class="fa-solid fa-ellipsis" data-bs-toggle="dropdown" aria-expanded="false"></i>
                                                 <ul class="dropdown-menu">
-                                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                    <li class="dropdown-item" id="alter-button">Alterar</li>
+                                                    <li class="dropdown-item" id="delete-button">Excluir</li>
                                                 </ul>
                                             </div>
                                             <i class="fa-regular fa-bookmark"></i>
@@ -886,9 +965,8 @@
                                             <div class="dropdown">
                                                 <i class="fa-solid fa-ellipsis" data-bs-toggle="dropdown" aria-expanded="false"></i>
                                                 <ul class="dropdown-menu">
-                                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                    <li class="dropdown-item" id="alter-button">Alterar</li>
+                                                    <li class="dropdown-item" id="delete-button">Excluir</li>
                                                 </ul>
                                             </div>
                                             <i class="fa-regular fa-bookmark"></i>
@@ -987,9 +1065,8 @@
                                                 <div class="dropdown">
                                                 <i class="fa-solid fa-ellipsis" data-bs-toggle="dropdown" aria-expanded="false"></i>
                                                 <ul class="dropdown-menu">
-                                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                    <li class="dropdown-item" id="alter-button">Alterar</li>
+                                                    <li class="dropdown-item" id="delete-button">Excluir</li>
                                                 </ul>
                                             </div>
                                                 <span>2 dias atrás</span>
@@ -1012,9 +1089,8 @@
                                                 <div class="dropdown">
                                                 <i class="fa-solid fa-ellipsis" data-bs-toggle="dropdown" aria-expanded="false"></i>
                                                 <ul class="dropdown-menu">
-                                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                    <li class="dropdown-item" id="alter-button">Alterar</li>
+                                                    <li class="dropdown-item" id="delete-button">Excluir</li>
                                                 </ul>
                                             </div>
                                                 <span>2 dias atrás</span>
@@ -1037,9 +1113,8 @@
                                                 <div class="dropdown">
                                                 <i class="fa-solid fa-ellipsis" data-bs-toggle="dropdown" aria-expanded="false"></i>
                                                 <ul class="dropdown-menu">
-                                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                    <li class="dropdown-item" id="alter-button">Alterar</li>
+                                                    <li class="dropdown-item" id="delete-button">Excluir</li>
                                                 </ul>
                                             </div>
                                                 <span>2 dias atrás</span>
@@ -1062,9 +1137,8 @@
                                                 <div class="dropdown">
                                                 <i class="fa-solid fa-ellipsis" data-bs-toggle="dropdown" aria-expanded="false"></i>
                                                 <ul class="dropdown-menu">
-                                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                    <li class="dropdown-item" id="alter-button">Alterar</li>
+                                                    <li class="dropdown-item" id="delete-button">Excluir</li>
                                                 </ul>
                                             </div>
                                                 <span>2 dias atrás</span>
