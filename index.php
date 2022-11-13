@@ -33,7 +33,7 @@
                 <div class="title">
                     <h1>Login</h1>
                     <span class="title-divisory"></span>
-                    <p>Não tem uma conta? <a href="pages/criarconta.php">Crie sua conta</a>, leva menos de um minuto.</p>
+                    <p>Não tem uma conta? <a href="pages/criarconta01.php">Crie sua conta</a>, leva menos de um minuto.</p>
                 </div>
 
                 <div class="mb-3">

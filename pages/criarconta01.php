@@ -36,43 +36,35 @@
             </div>
         </header>
     
-        <section class="field-create-account">
-            <form class="form-create-account">
-                <div class="title">
-                    <div class="date-progress">
+        <section class="field-create-account__new">
+            <form class="form-create-account__new">
+                <div class="title__new">
+                    <div class="date-progress__new">
                         <h1>Seus dados</h1>
                         <span>01 de 03</span>
                     </div>
                     <span class="date-progress__divisory"></span>
                 </div>
 
-                <div class="mb-3">
-                    <label class="form-label">Nome completo</label>
-                    <input type="text" class="form-control"required>
+                <div class="form__email">
+                    <label class="form-label">E-mail</label>
+                    <input type="text" class="form-control" required>
                 </div>
 
-                <div class="files-whatsapp">
-                    <div class="photo">
-                        <span>Sua foto</span>
-                        <div class="photo-file">
-                            <label for="formFileMultiple" class="form-label">(Escolha o arquivo)</label>
-                            <input class="form-control" type="file" id="formFileMultiple" multiple required>
-                        </div>
+                <div class="form__password">
+                    <div class="col__pass">
+                        <label class="form-label">Senha</label>
+                        <input type="number" min="0" minlength="9" maxlength="9" class="form-control" required>
                     </div>
-                    
-                    <div class="whatsapp">
-                        <label class="form-label">Whatsapp <span>(somente números)</span></label>
-                        <input type="number" class="form-control" min="0" required>
+
+                    <div class="col__pass">
+                        <label class="form-label">Repetir a senha <span>(De 6 a 12 caracteres)</span></label>
+                        <input type="number" min="0" minlength="11" maxlength="11" class="form-control" required>
                     </div>
                 </div>
 
-                <div class="mb-3">
-                    <label for="validationTextarea" class="form-label">Biografia</label>
-                    <textarea class="form-control field-textarea" id="validationTextarea" required></textarea>
-                </div>
-
-                <div class="next-page">
-                    <div class="next-page__container">
+                <div class="next-page__new">
+                    <div class="next-page__container__new">
                         <span>
                         <i class="fa-solid fa-triangle-exclamation"></i>
                         Importante! <br> Preencha todos os dados.

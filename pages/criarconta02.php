@@ -37,7 +37,7 @@
         </header>
     
         <section class="field-create-account">
-            <form class="row form-create-account">
+            <form class="form-create-account">
                 <div class="title">
                     <div class="date-progress">
                         <h1>Seus dados</h1>
@@ -46,45 +46,29 @@
                     <span class="date-progress__divisory"></span>
                 </div>
 
-                <div class="col-6">
-                    <label class="form-label">RG <span>(Somente números)</span></label>
-                    <input type="number" min="0" minlength="9" maxlength="9" class="form-control" required>
-                </div>
-
-                <div class="col-6">
-                    <label class="form-label">CPF <span>(Somente números)</span></label>
-                    <input type="number" min="0" minlength="11" maxlength="11" class="form-control" required>
-                </div>
-                <div class="col-4">
-                    <label class="form-label">Data de nascimento</label>
-                    <input type="date" class="form-control" required>
-                </div>
-                <div class="col-6">
-                    <label class="form-label">Cidade</label>
+                <div class="mb-3">
+                    <label class="form-label">Nome completo</label>
                     <input type="text" class="form-control" required>
                 </div>
-                <div class="col-2">
-                    <label class="form-label">UF</label>
-                    <select id="inputState" class="form-select" required>
-                        <option selected>...</option>
-                        <option>SP</option>
-                        <option>RJ</option>
-                        <option>PR</option>
-                    </select>
+
+                <div class="files-whatsapp">
+                    <div class="photo">
+                        <span>Sua foto</span>
+                        <div class="photo-file">
+                            <label for="formFileMultiple" class="form-label">(Escolha o arquivo)</label>
+                            <input class="form-control" type="file" id="formFileMultiple" multiple required>
+                        </div>
+                    </div>
+                    
+                    <div class="whatsapp">
+                        <label class="form-label">Whatsapp <span>(somente números)</span></label>
+                        <input type="number" class="form-control" min="0" required>
+                    </div>
                 </div>
 
-                <div class="col-9">
-                    <label class="form-label">Endereço</label>
-                    <input type="text" class="form-control" required>
-                </div>
-                <div class="col-3">
-                    <label class="form-label">Número</label>
-                    <input type="number" class="form-control" min="0" required>
-                </div>
-
-                <div class="col-12 mb-5">
-                    <label class="form-label">Complemento</label>
-                    <input type="text" class="form-control" required>
+                <div class="mb-3">
+                    <label for="validationTextarea" class="form-label">Biografia</label>
+                    <textarea class="form-control field-textarea" id="validationTextarea" required></textarea>
                 </div>
 
                 <div class="next-page">
@@ -94,9 +78,8 @@
                         Importante! <br> Preencha todos os dados.
                         </span>
 
-                        <a href="criarconta.php" class="prev-page__button">Voltar</a>
-
-                        <a href="criarconta03.php" class="next-page__button">Finalizar</a>
+                        <a href="criarconta01.php" class="prev-page__button">Voltar</a>
+                        <a href="criarconta03.php" class="next-page__button">Próximo</a>
                     </div>
                 </div>
             </form>

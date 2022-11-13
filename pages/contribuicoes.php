@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Dandelion - Home</title>
+        <title>Dandelion - Contribuições</title>
         <link rel="stylesheet" href="../assets/css/style.css">
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -16,6 +16,101 @@
     </head>
 <body class="body">
     <main class="dandelion-full-space">
+    <div class="background__form" id="background-form">
+        <form class="form-create-account__contribuir">
+            <div class="close" id="close-button">
+                <i class="fa-solid fa-square-xmark"></i>
+            </div>
+            <div class="title">
+                <div class="date-progress">
+                    <h1>Sua contribuição</h1>
+                    <span>CMD São Marcos</span>
+                </div>
+                <span class="date-progress__divisory"></span>
+            </div>
+
+            <div class="col-12 mb-4">
+                <label class="form-label">Atividade</label>
+                <input type="text" class="form-control" required>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-6 photo">
+                    <span>Foto(s)</span>
+                    <div class="photo-file">
+                        <label class="form-label">(Escolha o arquivo)</label>
+                        <input class="form-control" type="file" id="formFileMultiple" multiple required>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <label class="form-label">Categoria</label>
+                    <select id="inputState" class="form-select" required>
+                        <option selected>...</option>
+                        <option>Mecânica</option>
+                        <option>Encanador</option>
+                        <option>Instrutor</option>
+                    </select>
+                </div>    
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Descrição</label>
+                <textarea class="form-control field-textarea" required></textarea>
+            </div>
+
+            <div class="service">
+                <label class="form-label">Este serviço aceita trocas?</label>
+                <i class="fa-solid fa-circle-info"></i>
+                <div class="options-buttons">
+                    <button type="button" class="button-choice button-acc">Sim</button>
+                    <button type="button" class="button-choice">Não</button>
+                </div>
+            </div>
+
+            <span class="date-progress__divisory"></span>
+
+            <div class="available-times">
+                <h1>Horários disponíveis</h1>
+                <div class="options-service">
+                    <div class="col-7">
+                        <label class="form-label">Dia da semana</label>
+                        <select id="inputState" class="form-select" required>
+                            <option selected class="option-neuter">Selecione o dia</option>
+                            <option>Segunda-feira</option>
+                            <option>Terça-feira</option>
+                            <option>Quarta-feira</option>
+                            <option>Quinta-feira</option>
+                            <option>Sexta-feira</option>
+                            <option>Sábado</option>
+                            <option>Domingo</option>
+                        </select>
+                    </div>
+
+                    <div class="col-2">
+                        <label class="form-label">Das</label>
+                        <input type="time" class="service-hours"  />
+                    </div>
+
+                    <div class="col-2">
+                        <label class="form-label">Até</label>
+                        <input type="time" class="service-hours" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="next-page__contribuir">
+                <div class="next-page__container__contribuir">
+                    <span>
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                    Importante! <br> Preencha todos os dados.
+                    </span>
+
+                    <button type="submit" href="../index.php" class="next-page__button">Finalizar</a>
+                </div>
+            </div>
+
+        </form>
+    </div>
         <section class="dandelion-template">
             <article class="logo-dandelion">
                 <div class="dandelion-logo__icon">
@@ -83,7 +178,7 @@
                         <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
                                 <!-- hash-channel -->
-                                <div class="hash-channel__options">
+                                <div class="hash-channel__options" id="button-contribution">
                                     <div class="left-white-space"></div>
                                     <div class="right-space">
                                         <span>Contribuir</span>
@@ -294,26 +389,22 @@
                             <div class="contributions-container">
                                 <img src="../assets/imgs/hand-voluntaring_icon.png" alt="ícone de voluntário">
                                 <span class="contributions-span">Contribuições</span>
-                                <span class="contributions-divisory"></span>
-                                <span class="contributions-category">#Livros</span>
-                                <span class="contributions-divisory"></span>
-
                             </div>
 
                             <div class="services-search">
                                 <ul class="contributions-services__nav">
                                     <li>
-                                        <a href="" class="contributions-services__nav-link link-active">Oferecidas</a>
+                                        <a href="" class="contributions-services__nav-link link-active">Todas</a>
                                     </li>
 
                                     <li>
-                                        <a href="" class="contributions-services__nav-link">Solicitadas</a>
+                                        <a href="" class="contributions-services__nav-link contributions-green__link">#Livros</a>
                                     </li>
                                 </ul>
 
                                 <div class="search-services-container">
                                     <img src="../assets/imgs/search-icon.png" alt="">                                   
-                                    <input type="search" class="search-services" placeholder="Procurar em serviços" />
+                                    <input type="search" class="search-services" placeholder="Procurar #contribuições" />
                                 </div>
                             </div>
 
@@ -392,13 +483,84 @@
 
                                         <div class="comunity-coins__price">
                                             <img src="../assets/imgs/dandelion_coin_green.png" alt="">
+                                            <span class="local-coin">20</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card-service">
+                                    <div class="card-info">
+                                        <div class="photo-info">
+                                            <div class="photo-info__user">
+                                                <img src="../assets/imgs/girl_photo01.png" alt="girl photo" />
+                                                <div class="people-status online"></div>
+                                            </div>
+
+                                            <div class="name-user__time-online">
+                                                <span>Mariana Lemos</span>
+                                                <p>2h</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-options">
+                                            <div class="dropdown">
+                                                <i class="fa-solid fa-ellipsis" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                            <i class="fa-regular fa-bookmark"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-title-service">
+                                        <p>Livros de Química em Bom Estado - Seminovos</p>
+                                    </div>
+
+                                    <div class="service-img">
+                                        <img src="../assets/imgs/livros-img.png" alt="imagem do serviço">
+                                    </div>
+
+                                    <div class="service-details">
+                                        <div class="dropdown" ata-bs-toggle="dropdown" aria-expanded="false">
+                                            <button class="dropdown-toggle drop" type="button" data-bs-toggle="dropdown" aria-expanded="false">Detalhes</button>
+                                            <div class="dropdown-menu">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia laudantium minus esse, cumque corrupti perspiciatis eveniet doloremque, voluptas commodi repudiandae sapiente aliquid blanditiis magni culpa quibusdam rem ullam architecto. Aliquid.
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque vero dolorum dolorem. Quisquam alias dolor quos quam accusantium! Excepturi quibusdam deserunt ipsa, a autem minima quisquam praesentium vitae architecto nam.
+                                            </div>
+                                        </div>
+
+                                        <span class="service-details__divisory"></span>
+
+                                        <div class="service-details__hours">
+                                            <i class="fa-solid fa-clock"></i>
+                                            <span>Horários</span>
+                                        </div>
+
+                                        <span class="service-details__divisory"></span>
+
+                                        <div class="helping-points">
+                                            <i class="fa-solid fa-handshake-angle"></i>
                                             <span>20</span>
                                         </div>
-                                        
+                                    </div>
+
+                                    <div class="solicite-service">
+                                        <div class="comunity-solicites">
+                                            <div class="comunity-solicites__icon">
+                                                <img src="../assets/imgs/queue.png" alt="">
+                                            </div>
+                                            <span>03</span>
+                                        </div>
+
                                         <span class="solicite-services__divisory"></span>
 
-                                        <button type="button" class="button-solicite__service">Solicitar</button>
-
+                                        <div class="comunity-coins__price">
+                                            <img src="../assets/imgs/dandelion_coin_blue.png" alt="">
+                                            <span class="global-coin">20</span>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -473,95 +635,8 @@
 
                                         <div class="comunity-coins__price">
                                             <img src="../assets/imgs/dandelion_coin_green.png" alt="">
-                                            <span>20</span>
+                                            <span class="local-coin">20</span>
                                         </div>
-                                        
-                                        <span class="solicite-services__divisory"></span>
-
-                                        <button type="button" class="button-solicite__service">Solicitar</button>
-
-                                    </div>
-                                </div>
-
-                                <div class="card-service">
-                                    <div class="card-info">
-                                        <div class="photo-info">
-                                            <div class="photo-info__user">
-                                                <img src="../assets/imgs/girl_photo01.png" alt="girl photo" />
-                                                <div class="people-status online"></div>
-                                            </div>
-
-                                            <div class="name-user__time-online">
-                                                <span>Mariana Lemos</span>
-                                                <p>2h</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="card-options">
-                                            <div class="dropdown">
-                                                <i class="fa-solid fa-ellipsis" data-bs-toggle="dropdown" aria-expanded="false"></i>
-                                                <ul class="dropdown-menu">
-                                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                                </ul>
-                                            </div>
-                                            
-                                            <i class="fa-regular fa-bookmark"></i>
-                                        </div>
-                                    </div>
-
-                                    <div class="card-title-service">
-                                        <p>Livros de Química em Bom Estado - Seminovos</p>
-                                    </div>
-
-                                    <div class="service-img">
-                                        <img src="../assets/imgs/livros-img.png" alt="imagem do serviço">
-                                    </div>
-
-                                    <div class="service-details">
-                                        <div class="dropdown" ata-bs-toggle="dropdown" aria-expanded="false">
-                                            <button class="dropdown-toggle drop" type="button" data-bs-toggle="dropdown" aria-expanded="false">Detalhes</button>
-                                            <div class="dropdown-menu">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia laudantium minus esse, cumque corrupti perspiciatis eveniet doloremque, voluptas commodi repudiandae sapiente aliquid blanditiis magni culpa quibusdam rem ullam architecto. Aliquid.
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque vero dolorum dolorem. Quisquam alias dolor quos quam accusantium! Excepturi quibusdam deserunt ipsa, a autem minima quisquam praesentium vitae architecto nam.
-                                            </div>
-                                        </div>
-
-                                        <span class="service-details__divisory"></span>
-
-                                        <div class="service-details__hours">
-                                            <i class="fa-solid fa-clock"></i>
-                                            <span>Horários</span>
-                                        </div>
-
-                                        <span class="service-details__divisory"></span>
-
-                                        <div class="helping-points">
-                                            <i class="fa-solid fa-handshake-angle"></i>
-                                            <span>20</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="solicite-service">
-                                        <div class="comunity-solicites">
-                                            <div class="comunity-solicites__icon">
-                                                <img src="../assets/imgs/queue.png" alt="">
-                                            </div>
-                                            <span>03</span>
-                                        </div>
-
-                                        <span class="solicite-services__divisory"></span>
-
-                                        <div class="comunity-coins__price">
-                                            <img src="../assets/imgs/dandelion_coin_green.png" alt="">
-                                            <span>20</span>
-                                        </div>
-                                        
-                                        <span class="solicite-services__divisory"></span>
-
-                                        <button type="button" class="button-solicite__service">Solicitar</button>
-
                                     </div>
                                 </div>
 
@@ -635,14 +710,9 @@
                                         <span class="solicite-services__divisory"></span>
 
                                         <div class="comunity-coins__price">
-                                            <img src="../assets/imgs/dandelion_coin_green.png" alt="">
-                                            <span>20</span>
+                                            <img src="../assets/imgs/dandelion_coin_blue.png" alt="">
+                                            <span class="global-coin">20</span>
                                         </div>
-                                        
-                                        <span class="solicite-services__divisory"></span>
-
-                                        <button type="button" class="button-solicite__service">Solicitar</button>
-
                                     </div>
                                 </div>
 
@@ -716,14 +786,9 @@
                                         <span class="solicite-services__divisory"></span>
 
                                         <div class="comunity-coins__price">
-                                            <img src="../assets/imgs/dandelion_coin_green.png" alt="">
-                                            <span>20</span>
+                                            <img src="../assets/imgs/dandelion_coin_blue.png" alt="">
+                                            <span class="global-coin">20</span>
                                         </div>
-                                        
-                                        <span class="solicite-services__divisory"></span>
-
-                                        <button type="button" class="button-solicite__service">Solicitar</button>
-
                                     </div>
                                 </div>
 
@@ -798,13 +863,8 @@
 
                                         <div class="comunity-coins__price">
                                             <img src="../assets/imgs/dandelion_coin_green.png" alt="">
-                                            <span>20</span>
+                                            <span class="local-coin">20</span>
                                         </div>
-                                        
-                                        <span class="solicite-services__divisory"></span>
-
-                                        <button type="button" class="button-solicite__service">Solicitar</button>
-
                                     </div>
                                 </div>
 
@@ -878,99 +938,11 @@
                                         <span class="solicite-services__divisory"></span>
 
                                         <div class="comunity-coins__price">
-                                            <img src="../assets/imgs/dandelion_coin_green.png" alt="">
-                                            <span>20</span>
+                                            <img src="../assets/imgs/dandelion_coin_blue.png" alt="">
+                                            <span class="global-coin">20</span>
                                         </div>
-                                        
-                                        <span class="solicite-services__divisory"></span>
-
-                                        <button type="button" class="button-solicite__service">Solicitar</button>
-
                                     </div>
                                 </div>
-
-                                <div class="card-service">
-                                    <div class="card-info">
-                                        <div class="photo-info">
-                                            <div class="photo-info__user">
-                                                <img src="../assets/imgs/girl_photo01.png" alt="girl photo" />
-                                                <div class="people-status online"></div>
-                                            </div>
-
-                                            <div class="name-user__time-online">
-                                                <span>Mariana Lemos</span>
-                                                <p>2h</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="card-options">
-                                            <div class="dropdown">
-                                                <i class="fa-solid fa-ellipsis" data-bs-toggle="dropdown" aria-expanded="false"></i>
-                                                <ul class="dropdown-menu">
-                                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                                </ul>
-                                            </div>
-                                            <i class="fa-regular fa-bookmark"></i>
-                                        </div>
-                                    </div>
-
-                                    <div class="card-title-service">
-                                        <p>Livros de Química em Bom Estado - Seminovos</p>
-                                    </div>
-
-                                    <div class="service-img">
-                                        <img src="../assets/imgs/livros-img.png" alt="imagem do serviço">
-                                    </div>
-
-                                    <div class="service-details">
-                                        <div class="dropdown" ata-bs-toggle="dropdown" aria-expanded="false">
-                                            <button class="dropdown-toggle drop" type="button" data-bs-toggle="dropdown" aria-expanded="false">Detalhes</button>
-                                            <div class="dropdown-menu">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia laudantium minus esse, cumque corrupti perspiciatis eveniet doloremque, voluptas commodi repudiandae sapiente aliquid blanditiis magni culpa quibusdam rem ullam architecto. Aliquid.
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque vero dolorum dolorem. Quisquam alias dolor quos quam accusantium! Excepturi quibusdam deserunt ipsa, a autem minima quisquam praesentium vitae architecto nam.
-                                            </div>
-                                        </div>
-
-                                        <span class="service-details__divisory"></span>
-
-                                        <div class="service-details__hours">
-                                            <i class="fa-solid fa-clock"></i>
-                                            <span>Horários</span>
-                                        </div>
-
-                                        <span class="service-details__divisory"></span>
-
-                                        <div class="helping-points">
-                                            <i class="fa-solid fa-handshake-angle"></i>
-                                            <span>20</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="solicite-service">
-                                        <div class="comunity-solicites">
-                                            <div class="comunity-solicites__icon">
-                                                <img src="../assets/imgs/queue.png" alt="">
-                                            </div>
-                                            <span>03</span>
-                                        </div>
-
-                                        <span class="solicite-services__divisory"></span>
-
-                                        <div class="comunity-coins__price">
-                                            <img src="../assets/imgs/dandelion_coin_green.png" alt="">
-                                            <span>20</span>
-                                        </div>
-                                        
-                                        <span class="solicite-services__divisory"></span>
-
-                                        <button type="button" class="button-solicite__service">Solicitar</button>
-
-                                    </div>
-                                </div>
-                                
-
                             </div>
                         </main>
                     </section>
@@ -1162,5 +1134,6 @@
         </section>
     </div>
     
+    <script src="../assets/js/script.js"></script>
 </body>
 </html>

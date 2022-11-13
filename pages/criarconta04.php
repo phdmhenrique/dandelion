@@ -36,51 +36,113 @@
             </div>
         </header>
     
-        <section class="field-create-account">
-            <form class="form-create-account">
+        <section class="field-create-account__more">
+            <form class="form-create-account__contribuir">
                 <div class="title">
                     <div class="date-progress">
-                        <h1>Seus dados</h1>
-                        <span>01 de 03</span>
+                        <h1>Sua contribuição</h1>
+                        <span>03 de 03</span>
                     </div>
                     <span class="date-progress__divisory"></span>
                 </div>
 
-                <div class="mb-3">
-                    <label class="form-label">Nome completo</label>
-                    <input type="text" class="form-control"required>
+                <div class="col-12 mb-4">
+                    <label class="form-label">Atividade</label>
+                    <input type="text" class="form-control" required>
                 </div>
 
-                <div class="files-whatsapp">
-                    <div class="photo">
-                        <span>Sua foto</span>
+                <div class="row mb-4">
+                    <div class="col-6 photo">
+                        <span>Foto(s)</span>
                         <div class="photo-file">
-                            <label for="formFileMultiple" class="form-label">(Escolha o arquivo)</label>
+                            <label class="form-label">(Escolha o arquivo)</label>
                             <input class="form-control" type="file" id="formFileMultiple" multiple required>
                         </div>
                     </div>
-                    
-                    <div class="whatsapp">
-                        <label class="form-label">Whatsapp <span>(somente números)</span></label>
-                        <input type="number" class="form-control" min="0" required>
-                    </div>
+                    <div class="col-6">
+                        <label class="form-label">Categoria</label>
+                        <select id="inputState" class="form-select" required>
+                            <option selected>...</option>
+                            <option>Mecânica</option>
+                            <option>Encanador</option>
+                            <option>Instrutor</option>
+                        </select>
+                    </div>    
                 </div>
 
                 <div class="mb-3">
-                    <label for="validationTextarea" class="form-label">Biografia</label>
-                    <textarea class="form-control field-textarea" id="validationTextarea" required></textarea>
+                    <label class="form-label">Descrição</label>
+                    <textarea class="form-control field-textarea" required></textarea>
                 </div>
 
-                <div class="next-page">
-                    <div class="next-page__container">
+                <div class="service">
+                    <label class="form-label">Este serviço aceita trocas?</label>
+                    <i class="fa-solid fa-circle-info"></i>
+                    <div class="options-buttons">
+                        <button type="button" class="button-choice button-acc">Sim</button>
+                        <button type="button" class="button-choice">Não</button>
+                    </div>
+                </div>
+
+                <span class="date-progress__divisory"></span>
+
+                <div class="available-times">
+                    <h1>Horários disponíveis</h1>
+                    <div class="options-service">
+                        <div class="col-7">
+                            <label class="form-label">Dia da semana</label>
+                            <select id="inputState" class="form-select" required>
+                                <option selected class="option-neuter">Selecione o dia</option>
+                                <option>Segunda-feira</option>
+                                <option>Terça-feira</option>
+                                <option>Quarta-feira</option>
+                                <option>Quinta-feira</option>
+                                <option>Sexta-feira</option>
+                                <option>Sábado</option>
+                                <option>Domingo</option>
+                            </select>
+                        </div>
+
+                        <div class="col-2">
+                            <label class="form-label">Das</label>
+                            <input type="time" class="service-hours"  />
+                        </div>
+
+                        <div class="col-2">
+                            <label class="form-label">Até</label>
+                            <input type="time" class="service-hours" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="new-service-hours">
+                    <button type="button" class="new-service-hours__button">
+                        <i class="fa-regular fa-square-plus"></i>
+                        <span class="phrase-hours-button">Novo horário</span>
+                    </button>
+                </div>
+
+                <div class="new-activity">
+                    <button type="button" class="new-activity__button">
+                        <i class="fa-regular fa-square-plus"></i>
+                        <span class="phrase-activity-button">Nova atividade</span>
+                    </button>
+                </div>
+
+
+                <div class="next-page__contribuir">
+                    <div class="next-page__container__contribuir">
                         <span>
                         <i class="fa-solid fa-triangle-exclamation"></i>
                         Importante! <br> Preencha todos os dados.
                         </span>
 
-                        <a href="criarconta02.php" class="next-page__button">Próximo</a>
+                        <a href="criarconta02.php" class="prev-page__button">Voltar</a>
+
+                        <a href="../index.php" class="next-page__button">Finalizar</a>
                     </div>
                 </div>
+
             </form>
         </section>
 

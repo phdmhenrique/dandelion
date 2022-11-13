@@ -16,6 +16,37 @@ body{
     background: #F2F7F0;
 }
 
+body::-webkit-scrollbar {
+    width: 12px;           /* width of the entire scrollbar */
+}
+  
+body::-webkit-scrollbar-track {
+    background: white;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #49CC68;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */  /* creates padding around scroll thumb */
+    border: 3px solid #FFF;
+}
+
+.comum-messages::-webkit-scrollbar,
+.main-services::-webkit-scrollbar {
+    width: 12px;           /* width of the entire scrollbar */
+}
+  
+.comum-messages::-webkit-scrollbar-track,
+.main-services::-webkit-scrollbar-track {
+    background: white;        /* color of the tracking area */
+}
+
+.comum-messages::-webkit-scrollbar-thumb,
+.main-services::-webkit-scrollbar-thumb {
+    background-color: #49CC68;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */  /* creates padding around scroll thumb */
+    border: 1px solid #FFF;
+}
+
 ul, li, a{
     text-decoration: none;
     list-style: none;
@@ -321,26 +352,6 @@ ul, li, a{
 /*********************************************** 
             FORM -- FORM-CREATE-ACCOUNT
 ************************************************/
-.field-create-account{
-    width: 100%;
-    height: 820px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.form-create-account{
-    width: 736px;
-    height: 754px;
-    background: white;
-    border: 1px solid #E6E6F0;
-    border-radius: 8px;
-    padding: 60px;
-    position: absolute;
-    top: -80px;
-}
-
 .date-progress{
     width: 100%;
     height: auto;
@@ -1163,6 +1174,13 @@ input[type="file"] {
     border-radius: 25px;
     position: absolute;
     right: 0;
+
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    color: #FFFFFF;
+    text-align: center;
 }
 
 /* nav */
@@ -1655,7 +1673,9 @@ input[type="file"] {
 }
 
 .photo-info__user{
+    width: 35px;
     position: relative;
+    margin-right: 5px;
 }
 
 .photo-info__user img{
@@ -1819,10 +1839,18 @@ input[type="file"] {
     justify-content: center;
 }
 
-.comunity-solicites i{
-    font-size: 30px;
+.comunity-solicites__icon {
+    width: 30px;
+    height: 30px;
     margin-right: 5px;
-    color: #49CC68;
+    background: #49CC68;    
+    border-radius: 3px;
+    text-align: center;
+}
+
+.comunity-solicites__icon img{
+    width: 20px;
+    height: 20px;
 }
 
 .comunity-solicites span{
@@ -1859,7 +1887,14 @@ input[type="file"] {
     font-weight: 600;
     font-size: 18px;
     line-height: 0px;
+}
+
+.local-coin{
     color: #49CC68;
+}
+
+.global-coin{
+    color: #0EC1C9;
 }
 
 .button-solicite__service{
@@ -2078,8 +2113,275 @@ input[type="file"] {
     justify-content: flex-end;
 }
 
-
 /* footer */
 .footer-dandelion {
 	grid-area: footer;
+}
+
+/*********************************************************** 
+########### PÁGINA CRIAR CONTA 01 - NOVA PAG ###########
+***********************************************************/
+.field-create-account__new{
+    width: 100%;
+    height: 600px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-create-account__new{
+    width: 736px;
+    height: 530px;
+    background: white;
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+    padding: 60px;
+    position: absolute;
+    top: -80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.title__new {
+    width: 100%;
+    height: 80px;
+    position: relative;
+}
+
+.date-progress__new{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.date-progress__new h1{
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 25px;
+    color: #232323;
+}
+
+.date-progress__new span{
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 25px;
+    color: #9C98A6;
+}
+
+.next-page__new{
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    border-top: 1px solid #E6E6F0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top: 20px;
+}
+
+.next-page__container__new{
+    width: 100%;
+    height: 100%;
+    padding: 0 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.next-page__new span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #9C98A6;
+}
+
+.next-page__new i{
+    font-size: 25px;
+    color: #49CC68;
+    margin-right: 10px;
+}
+
+.form__email{
+    width: 100%;
+    height: 100px;
+}
+
+.form__password{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.col__pass{
+    width: 47%;
+}
+
+/* MENU DE CRUD */
+.dropdown i{
+    cursor: pointer;
+}
+
+.dropdown-menu{
+    width: 320px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+/*  
+    ##########################
+        dandelion - opções
+    ##########################
+*/
+.hash-channel__options{
+    width: 100%;
+    height: 25px;
+    background: #49CC68;
+    border-radius: 5px;
+    display: flex;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.hash-channel__options:nth-child(1){
+    margin-bottom: 15px !important;
+}
+
+.left-white-space{
+    width: 10%;
+    height: 100%;
+    border-radius: 5px 0 0 5px;
+    background-color: #ffffff;
+}
+
+.right-space{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 5px;
+}
+
+.right-space span{
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #ffffff;
+    margin-left: 15px;
+}
+
+/*********************************************** 
+########## PÁGINA -- CONTRIBUICOES.PHP ##########
+************************************************/
+.contributions-green__link {
+    color: #49CC68;
+    font-weight: bold;
+    opacity: 1;
+}
+
+.contributions-green__link:hover {
+    color: #49CC68;
+}
+
+/*********************************************** 
+########## PÁGINA -- CONTRIBUICOES.PHP ##########
+************************************************/
+.background__form{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000090;
+    z-index: 999;
+    display: none;
+}
+
+.active-background {
+    display: block;
+}
+
+.close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+
+.close i {
+    color: #dd2929;
+    font-size: 32px;
+}
+
+.form-create-account__contribuir{
+    width: 700px;
+    height: auto;
+    background: white;
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.active-form__contribuir{
+    display: block;
+}
+
+.next-page__contribuir{
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    border-top: 1px solid #E6E6F0;
+    margin-top: 20px;
+}
+
+.next-page__container__contribuir{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.next-page__contribuir span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #9C98A6;
+}
+
+.next-page__contribuir i{
+    font-size: 25px;
+    color: #49CC68;
+    margin-right: 10px;
 }
