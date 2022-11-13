@@ -10,29 +10,29 @@ const deleteContribution = document.getElementById("delete-contribution-form");
 const deleteButton = document.getElementById("delete-button");
 const noDelete = document.getElementById("no-delete");
 
-closeButtonInsert.addEventListener("click", () => {
-    backgroundForm.classList.remove("active-background");
-    insertContribution.classList.remove("active-form");
-});
+// closeButtonInsert.addEventListener("click", () => {
+//     backgroundForm.classList.remove("active-background");
+//     insertContribution.classList.remove("active-form");
+// });
 
-closeButtonAlter.addEventListener("click", () => {
-    backgroundForm.classList.remove("active-background");
-    alterContribution.classList.remove("active-form");
-});
+// closeButtonAlter.addEventListener("click", () => {
+//     backgroundForm.classList.remove("active-background");
+//     alterContribution.classList.remove("active-form");
+// });
 
-btnContributions.addEventListener("click", () => {
-    backgroundForm.classList.toggle("active-background");
-    insertContribution.classList.toggle("active-form");
-});
+// btnContributions.addEventListener("click", () => {
+//     backgroundForm.classList.toggle("active-background");
+//     insertContribution.classList.toggle("active-form");
+// });
 
-alterButton.addEventListener("click", () => {
-    backgroundForm.classList.toggle("active-background");
-    alterContribution.classList.toggle("active-form");
-});
+// alterButton.addEventListener("click", () => {
+//     backgroundForm.classList.toggle("active-background");
+//     alterContribution.classList.toggle("active-form");
+// });
 
 deleteButton.addEventListener("click", () => {
-    backgroundForm.classList.toggle("active-background");
-    deleteContribution.classList.toggle("active-form");
+    backgroundForm.classList.add("active-background");
+    deleteContribution.classList.add("active-form");
 });
 
 noDelete.addEventListener("click", () => {

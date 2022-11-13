@@ -405,14 +405,7 @@ ul, li, a{
     color: #505050;
 }
 
-.photo-file{
-    background: #FFFFFF;
-    border: 1px solid rgba(35, 35, 35, 0.15);
-    border-radius: 8px;
-    padding: 10px;
-}
-
-input[type="file"] {
+/* input[type="file"] {
     display: none;
 }
 
@@ -424,7 +417,7 @@ input[type="file"] {
     border-radius: 8px;
     margin: 0;
     cursor: pointer;
-}
+} */
 
 .whatsapp{
     width: 48%;
@@ -755,6 +748,23 @@ input[type="file"] {
     justify-content: space-between;
     width: 100%;
     height: 100%;
+}
+
+.option{
+    width: 48%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-hours{
+    width: 47%;
+    height: 100%;
+    display: flex;
+}
+
+.container-hours .option + .option {
+    margin-left: 15px;
 }
 
 .form-select{
@@ -1774,6 +1784,15 @@ input[type="file"] {
     padding: 5px !important;
 }
 
+.dropdown-item a{
+    color: #49CC68;
+    text-decoration: none;
+}
+
+.dropdown-item a:hover{
+    color: #49CC68;
+}
+
 .service-details__divisory{
     width: 2px;
     height: 20px;
@@ -2336,17 +2355,13 @@ input[type="file"] {
 }
 
 .form-create-account__contribuir{
-    display: none;
-    width: 700px;
-    height: auto;
+    width: 100%;
+    min-width: 570px;
+    min-height: 925px;
     background: white;
     border: 1px solid #E6E6F0;
     border-radius: 8px;
     padding: 40px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .active-form{
@@ -2370,6 +2385,7 @@ input[type="file"] {
 }
 
 .next-page__contribuir span{
+    width: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2415,6 +2431,7 @@ input[type="file"] {
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 8px;
 }
 
 .top-container h5 {
@@ -2464,4 +2481,56 @@ input[type="file"] {
     font-size: 14px;
     line-height: 1;
     color: #FFF;
+}
+
+.alter-button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 40px;
+    width: 150px;
+    height: 56px;
+    background: #49CC68;
+    border-radius: 8px;
+
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.delete-button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 40px;
+    width: 150px;
+    height: 56px;
+    background: #d73434;
+    border-radius: 8px;
+
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.contributions__buttons{
+    width: 68%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.contributions__buttons button + button{
+    margin-left: 15px;
 }
